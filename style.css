@@ -65,14 +65,18 @@ h2 {
     position: relative;
 }
 
+.btn {
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
 .primary {
     background: white;
     color: black;
     font-weight: bold;
-}
-.btn:hover {
-    transform: translateY(-3px);
-}
 }
 
 .secondary {
@@ -80,6 +84,11 @@ h2 {
     color: white;
     backdrop-filter: blur(10px);
 }
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
 .btn:active {
     transform: scale(0.95);
 }
@@ -126,18 +135,25 @@ h2 {
     width: 700px;
     height: 700px;
     background: #00e5ff;
+
+    top: -100px;
+    left: -100px;
+
+    animation: float1 4s infinite alternate;
 }
 
 .aurora-2 {
     width: 800px;
     height: 800px;
     background: #7c3aed;
+      animation: float2 7s infinite alternate;
 }
 
 .aurora-3 {
     width: 650px;
     height: 650px;
     background: #00ffa3;
+    animation: float3 6s infinite alternate;
 }
 
 @keyframes float1 {
