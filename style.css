@@ -64,15 +64,6 @@ h2 {
     transition: all 0.3s ease;
     position: relative;
 }
-
-.btn {
-    text-decoration: none;
-    padding: 14px 28px;
-    border-radius: 12px;
-    transition: all 0.3s ease;
-    position: relative;
-}
-
 .primary {
     background: white;
     color: black;
@@ -125,10 +116,11 @@ h2 {
 .aurora {
     position: fixed;
     border-radius: 50%;
-    filter: blur(150px);
-    opacity: 0.8;
+    filter: blur(180px);
+    opacity: 1;
     z-index: 1;
     mix-blend-mode: screen;
+    box-shadow: 0 0 300px currentColor;
 }
 
 .aurora-1 {
@@ -146,16 +138,23 @@ h2 {
     width: 800px;
     height: 800px;
     background: #7c3aed;
-      animation: float2 7s infinite alternate;
+
+    right: -200px;
+    top: 150px;
+
+    animation: float2 7s infinite alternate;
 }
 
 .aurora-3 {
     width: 650px;
     height: 650px;
     background: #00ffa3;
+
+    bottom: -150px;
+    left: 30%;
+
     animation: float3 6s infinite alternate;
 }
-
 @keyframes float1 {
     from {
         transform: translate(0,0);
