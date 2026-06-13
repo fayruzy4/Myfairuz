@@ -33,19 +33,23 @@ h1 {
     font-size: 4rem;
     margin-bottom: 1rem;
     line-height: 1.1;
+
+    text-shadow:
+    0 0 20px rgba(255,255,255,0.15);
 }
 
 h2 {
-    font-size: 1.5rem;
-    color: #9ca3af;
+    font-size: 1.4rem;
+    color: #d1d5db;
     margin-bottom: 2rem;
-    font-weight: normal;
+    font-weight: 500;
 }
 
 .description {
     max-width: 700px;
-    line-height: 1.8;
-    color: #d1d5db;
+    line-height: 1.9;
+    color: #e5e7eb;
+    font-size: 1.05rem;
     margin-bottom: 2rem;
 }
 
@@ -88,17 +92,18 @@ h2 {
     width: 100%;
     max-width: 700px;
 
-    background: rgba(255,255,255,0.05);
+    background: rgba(10, 15, 30, 0.85);
 
-    border: 1px solid rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
 
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(30px);
 
     border-radius: 20px;
 
-    padding: 1.5rem;
-}
+    padding: 1.8rem;
 
+    box-shadow: 0 0 30px rgba(0,0,0,0.4);
+}
 .quote-title {
     display: block;
     margin-bottom: 1rem;
@@ -109,6 +114,8 @@ h2 {
 
 #quote {
     line-height: 1.8;
+    color: #f3f4f6;
+    font-size: 1rem;
 }
 
 /* AURORA */
