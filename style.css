@@ -309,6 +309,7 @@ h2 {
     padding: 2rem;
 
     text-align: center;
+    animation: floating 4s ease-in-out infinite;
 }
 .welcome-card h2{
     font-size: 2rem;
