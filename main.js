@@ -79,3 +79,12 @@ now.toLocaleTimeString("id-ID", {
 
 datetimeElement.textContent =
 `${formattedDate} • ${formattedTime}`;
+
+const enterBtn = document.getElementById("enter-btn");
+const welcomeScreen = document.getElementById("welcome-screen");
+
+enterBtn.addEventListener("click", () => {
+
+    welcomeScreen.classList.add("welcome-hide");
+
+});
