@@ -39,3 +39,43 @@ function randomQuote() {
 }
 
 randomQuote();
+
+const greetingElement = document.getElementById("greeting");
+const datetimeElement = document.getElementById("datetime");
+
+const now = new Date();
+
+const hour = now.getHours();
+
+let greeting = "";
+
+if (hour >= 5 && hour < 11) {
+    greeting = "Selamat Pagi 🌤️";
+} else if (hour >= 11 && hour < 15) {
+    greeting = "Selamat Siang ☀️";
+} else if (hour >= 15 && hour < 18) {
+    greeting = "Selamat Sore 🌥️";
+} else {
+    greeting = "Selamat Malam 🌙";
+}
+
+greetingElement.textContent = greeting;
+
+const options = {
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+    year: "numeric"
+};
+
+const formattedDate =
+now.toLocaleDateString("id-ID", options);
+
+const formattedTime =
+now.toLocaleTimeString("id-ID", {
+    hour: "2-digit",
+    minute: "2-digit"
+});
+
+datetimeElement.textContent =
+`${formattedDate} • ${formattedTime}`;
