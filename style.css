@@ -310,6 +310,9 @@ h2 {
 
     text-align: center;
     animation: floating 4s ease-in-out infinite;
+    box-shadow:
+0 20px 60px rgba(0,0,0,.4),
+0 0 30px rgba(255,255,255,.05);
 }
 .welcome-card h2{
     font-size: 2rem;
@@ -348,10 +351,14 @@ h2 {
     cursor: pointer;
 
     transition: all .3s ease;
+    box-shadow:
+0 0 20px rgba(255,255,255,.15);
 }
 
 #enter-btn:hover{
-    transform: translateY(-3px);
+    transform:
+    translateY(-3px)
+    scale(1.02);
 }
 
 #enter-btn:active{
