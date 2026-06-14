@@ -386,3 +386,17 @@ h2 {
     visibility .6s ease;
 
 }
+.arabic-title{
+
+    font-size: 2.5rem;
+
+    margin-bottom: 1rem;
+
+    color: #ffffff;
+
+    text-shadow:
+    0 0 20px rgba(255,255,255,.2);
+
+    letter-spacing: 1px;
+
+}
